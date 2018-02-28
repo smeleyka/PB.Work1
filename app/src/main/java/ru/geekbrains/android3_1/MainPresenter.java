@@ -26,13 +26,13 @@ public class MainPresenter extends MvpBasePresenter<MainView> {
     public void buttonClick(int index) {
         switch (index) {
             case BTN1:
-                getView().setButtonText(R.id.btnCounter1, calculateCounterValue(BTN1));
+                getView().setButtonText(BTN1, calculateCounterValue(BTN1));
                 break;
             case BTN2:
-                getView().setButtonText(R.id.btnCounter2, calculateCounterValue(BTN2));
+                getView().setButtonText(BTN2, calculateCounterValue(BTN2));
                 break;
             case BTN3:
-                getView().setButtonText(R.id.btnCounter3, calculateCounterValue(BTN3));
+                getView().setButtonText(BTN3, calculateCounterValue(BTN3));
                 break;
         }
     }

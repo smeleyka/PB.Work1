@@ -37,13 +37,13 @@ public class MainActivity extends MvpActivity<MainView, MainPresenter> implement
         switch (button.getId())
         {
             case R.id.btnCounter1:
-                presenter.buttonClick(presenter.BTN1);
+                presenter.buttonClick(0);
                 break;
             case R.id.btnCounter2:
-                presenter.buttonClick(presenter.BTN2);
+                presenter.buttonClick(1);
                 break;
             case R.id.btnCounter3:
-                presenter.buttonClick(presenter.BTN3);
+                presenter.buttonClick(2);
                 break;
         }
     }
@@ -53,13 +53,13 @@ public class MainActivity extends MvpActivity<MainView, MainPresenter> implement
     {
         switch (index)
         {
-            case presenter.BTN1:
+            case 0:
                 button1.setText(String.format(getString(R.string.count), value));
                 break;
-            case R.id.btnCounter2:
+            case 1:
                 button2.setText(String.format(getString(R.string.count), value));
                 break;
-            case R.id.btnCounter3:
+            case 2:
                 button3.setText(String.format(getString(R.string.count), value));
                 break;
         }
